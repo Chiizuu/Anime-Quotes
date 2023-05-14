@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+ background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(images/download.jfif) center no-repeat ;
+ background-color: rgba(2, 13, 46, 0.9);
+ background-size: cover;
+}
+
+.quote-box {
+  background: transparent;
+  color: #ffffff;
+  width: 700px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px 10px rgba(0,0,0,0.5);
+}
+
+.quote-box h2 {
+  font-size: 52px;
+  margin-bottom: 40px;
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,0.5s)), url(images/download.jfif) center no-repeat cover;
+}
+
+.quote-box h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.quote-box blockquote {
+  font-size: 26px;
+  min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+  content: ' " ';
+}
+
+.quote-box span {
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+  right: 40px;
+}
+
+.quote-box span::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.quote-box div {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  justify-content: center;
+}
+
+.nquote {
+  background: rgb(23, 124, 229);
+  color: #ffffff;
+  border-radius: 25px;
+  border: 1px solid rgb(23, 124 ,229);
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.nquote:hover {
+  filter: brightness(110%);
+}
+
+.tweet {
+  background: transparent; 
+  color: #fff;
+  border-radius: 25px;
+  border: 2px solid rgb(23, 124 ,229);
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.tweet:hover{
+  background-color: rgb(2, 27, 53);
+  color: white;
+}
+
+.quote-box button i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(23, 124 ,229);
+}
+
+@media (max-width: 600px) {
+  .quote-box {
+    width: 100%;
+  }
+  .quote-box blockquote {
+    width: 100%;
+  }
+  .quote-box span {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+.quote-box span::before {
+  left: 15%;
+}
+}
+
